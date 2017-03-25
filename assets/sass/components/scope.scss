@@ -1,0 +1,23 @@
+.scope {
+
+	
+
+	&__info{
+		float: left;
+		font-size: 20px;
+		margin: 60px 0;
+
+	}
+
+	&__sort {
+		display: inline-block;
+		margin-left: 20px;
+		background-color: $color__primary;
+		color: $color__primary--highlight;
+		border: 2px $color__primary--dark solid;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 12px;
+		vertical-align:2px;
+	}
+}

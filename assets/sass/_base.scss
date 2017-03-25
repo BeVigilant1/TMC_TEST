@@ -1,0 +1,15 @@
+$color__primary--highlight: #fff;
+$color__primary--light: #1abc9c !default;
+$color__primary: #34495e !default;
+$color__primary--dark: #2c3e50 !default;
+$color__secondary--light: #ecf0f1;
+$color__secondary--dark: #bdc3c7;
+
+$base__font-size: 15 !default;
+$base__line: 20 !default;
+
+@function calc-em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+

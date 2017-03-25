@@ -1,0 +1,220 @@
+
+.routes{
+
+	&__field {
+		width: 325px;
+		height: 35px;
+		background-color: $color__primary--light;
+		color: $color__primary--highlight;
+		font-weight: 700;
+		font-size: 16px;
+		padding-left: 10px;
+		border:none;
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: $color__primary--highlight;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: $color__primary--highlight;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: $color__primary--highlight;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $color__primary--highlight;
+		}
+
+	}
+	
+	&__change {
+		margin: 12px 0;
+		display: block;
+		font-size: 14px;
+		text-align: right;
+		font-weight: 700;
+		&:after {
+			content:'';
+			display: inline-block;
+			height: 14px;
+			width: 16px;
+			background-image: url('/assets/img/change.png');
+			background-size: cover;
+			margin-left: 5px;
+			vertical-align: middle;
+
+		}
+	}
+
+	&__where {
+		float:left;
+		padding-top: 26px;
+	}
+
+	&__when {
+		width: 100%;
+		box-sizing: border-box;
+		height: 37px;
+		background-color: $color__primary--light;
+		color: $color__primary--highlight;
+		font-weight: 700;
+		font-size: 16px;
+		padding-left: 10px;
+		border:none;
+		background-position: right;
+		background-repeat: no-repeat;
+		
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: $color__primary--highlight;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: $color__primary--highlight;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: $color__primary--highlight;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $color__primary--highlight;
+		}
+
+		&--date {
+			background-image: url('/assets/img/calendar.png');
+			
+		}
+
+		&--time {
+			background-image: url('/assets/img/clock.png');
+
+		}
+	}
+
+	&__label {
+		width: 165px;
+		display: inline-block;
+
+		&:last-child {
+			margin-left: 2px;
+		}
+		
+		&-text {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+
+
+	
+	&__config {
+		padding-left: 10px;
+		float: left;
+		&-controls {
+			margin-top: 40px;
+			display: flex;
+			flex-direction:row;
+			justify-content:flex-start;
+			align-items:center;
+		}
+	}
+
+	&__back {
+		background-color: $color__primary;
+		color: $color__primary--highlight;
+		border: 2px $color__primary--dark solid;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 12px;
+
+	}
+
+	&__search {
+		padding-left: 30px;
+		font-weight: 700;
+
+
+	}
+
+	&__help {
+		background-color: $color__primary--light;
+		color: $color__primary--dark;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 12px;
+		border: none;
+		float:right;
+		margin-left: auto;
+	}
+
+	&__submit {
+		background-color: $color__primary;
+		color: $color__primary--highlight;
+		border: 2px $color__primary--dark solid;
+		width: 170px;
+		height: 37px;
+		margin-left: 27px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 16px;
+		margin-top: 26px;
+	}
+
+}
+
+
+
+// ************************** SWITCH ДЛЯ ПОИСКА ******************************************
+.switch {
+	display: inline-block;
+	margin-left: 10px;
+
+}
+
+.cmn-toggle {
+	 position: absolute;
+	margin-left: -9999px;
+	  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: $color__primary--dark;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: $color__primary;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 26px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: $color__primary--dark;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 30px;
+  background-color: $color__secondary--light;
+}

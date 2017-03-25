@@ -1,0 +1,238 @@
+
+.results__trains {
+	background-color: $color__primary--highlight;
+}
+
+.trains {
+
+
+	&__info {
+		max-width: 50%;
+		float: left;
+	}
+
+	&__title {
+		font-size: 20px;
+		display: block;
+		padding: 20px;
+	}
+
+	&__directions {
+		padding: 20px;
+
+	}
+
+	&__table {
+		padding-top: 15px;
+
+	}
+
+	&__link {
+		background-color: $color__primary--light;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 12px;
+		border: none;
+		color: $color__primary--highlight;
+	}
+
+	&__item {
+		font-weight: 700;
+		display: block;
+		padding: 10px;
+
+				&--departure, &--arrival, &--duration { 
+									font-weight: 300;
+
+				}
+	}
+
+	&__types {
+		display: block;
+		padding: 20px;	
+	}
+
+	&__table {
+		display: flex;
+		justify-content:flex-end;
+	}
+
+	&__departure {
+		display: block;
+	}
+
+	&__wagon-types {
+		float: left;
+		display: flex;
+		background-image: url('/assets/img/pattern.png');
+	}
+
+	&__option {
+		width: 150px;
+		height: 75px;
+
+	}
+
+	&__option--disabled {
+		visibility: hidden;
+	}
+
+	&__option--normal {
+		background-color: $color__secondary--dark;
+	}
+
+	&__option--active {
+		background-color: $color__primary;
+		&:after {
+			content:'';
+			background-color: $color__primary;
+			height: 12px;
+			width: 150px;
+			display: block;
+			position: relative;
+		}
+ 	}
+
+	&__caption {
+		display: block;
+		padding: 4px;
+		
+		&--name--active, &--quantity--active {
+			color: $color__primary--highlight;
+				
+			}
+		
+		&--sum {
+			font-weight: 700;
+
+			&--active {
+				color: $color__primary--light;
+			}
+		}
+	}
+
+	&__tickets {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__counter {
+		font-weight: 700;
+		margin-top: 70px;
+		display: inline-block;
+		text-align: center;
+
+	}
+
+	&__description {
+		font-weight: 300;
+	}
+
+	&__minus, &__plus {
+		background-color: $color__primary--light;
+		color: $color__primary--highlight;
+		border-radius: 10px;
+		font-weight: 700;
+		font-size: 16px;
+		border: none;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		padding-top: 2px;
+		margin: 20px 0;
+
+		&--spaced {
+			margin-top: 36px;
+		}
+
+	}
+
+	&__sheme {
+		background-image: url('/assets/img/wagon_mint_midnight.png');
+		background-repeat: no-repeat;
+		width: 625px;
+		height: 125px;
+		margin: 50px auto;
+	}
+
+	&__cabin {
+		position: relative;
+	    left: 49px;
+   		height: 81px;
+   		width: 552px;
+
+	}
+
+	&__room {
+		width: 63px;
+		height: 81px;
+		display: block;
+		float:left;
+		margin-right: -2px;
+	}
+
+	&__couch {
+		width: 20px;
+		border:1px solid $color__secondary--dark;
+		color: $color__secondary--dark;
+		text-align: center;
+		height: auto;
+		margin: 3px;
+		padding: 30px 0;
+
+			&--left {
+				float: left;
+			}
+			&--right {
+				float: right;
+			}
+	}
+
+	&__wagon-data, &__ticket-data {
+		display: inline-block;
+		padding:20px;
+	}
+
+	&__result {
+		display: flex;
+		justify-content: space-around;
+		font-weight: 700;
+
+		&-item {
+			padding: 10px;
+		}
+	}
+
+	&__label-place {
+		padding-left: 10px;
+
+	}
+
+	&__label-fullsum {
+		font-size: 20px;
+		font-weight: 700;
+		margin-left: 20px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		
+	}
+
+	&__money {
+		color:$color__primary--light;
+		font-size: 25px;
+	}
+
+
+
+	&__add-passenger {
+		background-color: $color__primary;
+		color: $color__primary--highlight;
+		border: 2px $color__primary--dark solid;
+		width: 300px;
+		height: 50px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 16px;
+		margin: 20px;
+	}
+}

@@ -1,0 +1,19 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: $color__secondary--light;
+	color: $color__primary--dark;
+}
+
+input:focus {
+    outline:none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+
+}

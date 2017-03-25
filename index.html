@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TMC</title>
+		<meta name="description" content="Задание от TMC">
+		<meta name="author" content="BeVigilant">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/screen.css?v=1.0">
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="results">
+			<div class="results results__header">
+				<h1>Поезда дальнего следования</h1>
+				<img src="assets/img/train.png">
+			</div>
+			<form class="routes results__routes clearfix">
+				<div class="routes__where">
+					<input type="text" name="departure" placeholder="Выберите место отправления" class="routes__field routes__field--departure">
+					<p class="routes__change">Поменять местами</p>
+					<input type="text" name="arrival" placeholder="Выберите место назначения" class="routes__field routes__field--destination">
+				</div>
+				<div class="routes__config">
+					<div class="clearfix">
+						<label class="routes__label">
+						<span class="routes__label-text">Дата отправления</span>
+						<input type="text" name="date" placeholder="27.03.17" class="routes__when routes__when--date">
+						</label>
+						<label class="routes__label">
+						<span class="routes__label-text">Интервал</span>
+						<input type="text" name="time" placeholder="0:00 | 23:59" class="routes__when routes__when--time">
+						</label>
+					</div>
+					<div class="routes__config-controls">
+						<button class="routes__back">+ Обратный маршрут</button>
+						<label class="routes__search">Поиск</label>
+						<div class="switch">
+							<input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+							<label for="cmn-toggle-4"></label>
+						</div>
+						<button class="routes__help">?</button>
+					</div>
+				</div>
+				<button class="routes__submit">Найти поезд</button>
+			</form>
+			<div class="scope results__scope clearfix">
+				<div class="scope__info">
+					<p>Москва — Санкт-Петербург расписание на 27.03.2017 найдено 32 поезда.<button class="scope__sort">Сортировать по цене</button></p>
+				</div>
+			</div>
+			<div class="trains results__trains">
+				<div class="trains__header clearfix">
+					<div class="trains__info">
+						<h2 class="trains__title">Поезд 002А  Красная Стрела</h2>
+						<p class="trains__directions">МОСКВА ОКТ — С-ПЕТЕР-ГЛ</p>
+						<div class="trains__types">
+							<button class="trains__link">ЭР</button>
+							<button class="trains__link">ФПК</button>
+							<button class="trains__link">Скорый</button>
+							<button class="trains__link">Фирменный</button>
+						</div>
+					</div>
+					<div class="trains__table">
+						<div class="trains__departure">
+							<span class="trains__item">Отправление</span>
+							<span class="trains__item">23:55 Мск</span>
+							<span class="trains__item">Пт, 24 мар.</span>
+							<span class="trains__item trains__item--departure">Ленинградский вокзал</span>
+						</div>
+						<div class="trains__arrival">
+							<span class="trains__item">Прибытие</span>
+							<span class="trains__item">07:56 Мск</span>
+							<span class="trains__item">Сб, 25 мар.</span>
+							<span class="trains__item trains__item--arrival">Московский вокзал</span>
+						</div>
+						<div class="trains__duration">
+							<span class="trains__item">В пути</span>
+							<span class="trains__item trains__item--duration">08ч 01м</span>
+						</div>
+					</div>
+					<div class="trains__wagon-types cleafix">
+						<div class="trains__option trains__option--disabled"></div>
+						<div class="trains__option trains__option--disabled"></div>
+						<div class="trains__option trains__option--disabled"></div>
+						<div class="trains__option trains__option--normal">
+							<span class="trains__caption trains__caption--name">Купе</span>
+							<span class="trains__caption trains__caption--sum">от 2 498.3 руб.</span>
+							<span class="trains__caption trains__caption--quantity">Мест 100</span>
+						</div>
+						<div class="trains__option trains__option--normal trains__option--active">
+							<span class="trains__caption trains__caption--name trains__caption--name--active">СВ</span>
+							<span class="trains__caption trains__caption--sum trains__caption--sum--active">от 5 044.3 руб.</span>
+							<span class="trains__caption trains__caption--quantity trains__caption--quantity--active">Мест 200</span>
+						</div>
+						<div class="trains__option trains__option--disabled"></div>
+					</div>
+				</div>
+				<div class="trains__tickets">
+					<div class="trains__counter">
+						<p>Количество билетов</p>
+						<p class="trains__description">(не больше 4)</p>
+					</div>
+					<div class="trains__counter">
+						<p>Взрослые</p>
+						<span class="trains__minus trains__minus--spaced">-</span>
+						<span class="trains__number trains__number--spaced">1</span>
+						<span class="trains__plus trains__plus--spaced">+</span>
+					</div>
+					<div class="trains__counter">
+						<p>Детские до 10 лет</p>
+						<p class="trains__description">(детский тариф)</p>
+						<span class="trains__minus">-</span>
+						<span class="trains__number">0</span>
+						<span class="trains__plus">+</span>
+					</div>
+					<div class="trains__counter">
+						<p>Детские до 5 лет</p>
+						<p class="trains__description">(без места)</p>
+						<span class="trains__minus">-</span>
+						<span class="trains__number">0</span>
+						<span class="trains__plus">+</span>
+					</div>
+				</div>
+				<div class="trains__wagon-map">
+					<div class="trains__sheme clearfix">
+						<div class="trains__cabin clearfix">
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">1</div>
+								<div class="trains__couch trains__couch--right">2</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">3</div>
+								<div class="trains__couch trains__couch--right">4</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">5</div>
+								<div class="trains__couch trains__couch--right">6</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">7</div>
+								<div class="trains__couch trains__couch--right">8</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">9</div>
+								<div class="trains__couch trains__couch--right">10</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">11</div>
+								<div class="trains__couch trains__couch--right">12</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">13</div>
+								<div class="trains__couch trains__couch--right">14</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">15</div>
+								<div class="trains__couch trains__couch--right">16</div>
+							</div>
+							<div class="trains__room">
+								<div class="trains__couch trains__couch--left">17</div>
+								<div class="trains__couch trains__couch--right">18</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="trains__summary clearfix">
+					<div class="trains__wagon-data">
+						<p class="trains__label-wagon">Вагон и класс обслуживания</p>
+						<div class="trains__result">
+							<span class="trains__result-item">№12</span>
+							<span class="trains__result-item">СВ</span>
+							<span class="trains__result-item">1У</span>
+						</div>
+					</div>
+					<div class="trains__ticket-data">
+						<p class="trains__label-place">Места и стоимость</p>
+						<div class="trains__result">
+							<span class="trains__result-item">Нижние</span>
+							<span class="trains__result-item">12</span>
+							<span class="trains__result-item">от 5 044.3 руб.</span>
+						</div>
+					</div>
+				</div>
+				<div class="trains__fullsum">
+					<p class="trains__label-fullsum">Общая сумма <span class="trains__money">от 5 044.3 руб.</span></p>
+				</div>
+				<div class="trains__passenger">
+					<button class="trains__add-passenger">Укажите данные пассажиров</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
